@@ -1,0 +1,7 @@
+body.custom-background {
+    background-image: url("/static/images/background.png");
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
