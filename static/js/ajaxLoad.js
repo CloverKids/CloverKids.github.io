@@ -11,7 +11,7 @@ function Input_KeyDown(event) {
             // result.setAttribute("id", "result");
             // $('#result').hide();
             document.getElementById("result").innerHTML = "";
-            $.post("/api/searchQuestion", {"keyword": keyword}, function (ret) {
+            $.post("http://127.0.0.1/api/searchQuestion", {"keyword": keyword}, function (ret) {
                     for (let i = 0; i < ret['data'].length; i++) {
                         let Qs = ret['data'][i].q.split("\n");
                         let As = ret['data'][i].a.split("\n");
