@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="cn">
 <head>
-    {% load static %}
     <meta charset="utf-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/background.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/InputBox.css' %}">
+    <link rel="stylesheet" type="text/css" href="static/css/background.css">
+    <link rel="stylesheet" type="text/css" href="static/css/InputBox.css">
 </head>
 <body class="custom-background">
 
 
-<script src="{% static 'js/jquery-3.4.1.min.js' %}" type="text/javascript"></script>
-<script src="{% static 'js/ajaxLoad.js' %}" type="text/javascript"></script>
+<script src="static/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="static/js/ajaxLoad.js" type="text/javascript"></script>
 <script>
     $.ajaxSetup({
         data: {csrfmiddlewaretoken: '{{ csrf_token }}'}
